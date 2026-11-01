@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nistha Diwedi | Applied ML Engineer</title>
+  <meta name="description" content="Portfolio of Nistha Diwedi, Computer Science engineer working on machine learning, LLM evaluation and data quality. Projects in evaluation, computer vision and full stack engineering." />
+  <meta name="author" content="Nistha Diwedi" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nistha Diwedi | Applied ML Engineer" />
+  <meta property="og:description" content="Machine learning systems and the evaluation pipelines that keep them honest." />
+  <meta property="og:url" content="https://github.com/Nistha-Diwedi" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312345B'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='bold' fill='white' text-anchor='middle'%3END%3C/text%3E%3C/svg%3E" />
+  <script>
+    document.documentElement.classList.add("js");
+    (function () {
+      try {
+        var saved = localStorage.getItem("nd-theme");
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", saved || (dark ? "dark" : "light"));
+      } catch (err) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Nistha Diwedi, home">
+        <span class="brand-mark" aria-hidden="true">ND</span>
+        <span class="brand-text">Nistha Diwedi</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a class="btn btn-sm btn-primary" href="assets/NisthaDiwedi_AI_Resume.pdf" download>Resume</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Applied ML Engineer</p>
+          <h1>I build models, and the evaluation that keeps them honest.</h1>
+          <p class="lead">
+            Computer Science engineer working across LLM evaluation, data quality and applied machine learning.
+            I write rubrics, audit data and ship pipelines that turn messy inputs into results you can trust.
+          </p>
+          <p class="hero-meta">New Delhi, India <span class="sep" aria-hidden="true">/</span> Open to Bengaluru relocation</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View work</a>
+            <a class="btn btn-ghost" href="assets/NisthaDiwedi_AI_Resume.pdf" download>Download resume</a>
+            <a class="btn btn-ghost" href="https://github.com/Nistha-Diwedi" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Highlights">
+          <p class="hero-card-title">LLM post-training and evaluation</p>
+          <p class="hero-card-body">Ethara AI, Gurugram. Rubrics, pairwise review and data curation for SFT and RLHF.</p>
+          <dl class="hero-stats">
+            <div><dt>Records curated</dt><dd>3,500+</dd></div>
+            <div><dt>Pairs evaluated</dt><dd>5,000+</dd></div>
+            <div><dt>Audit score</dt><dd>98%</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">01 / About</p>
+          <h2>Careful with data, curious about models.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I am a final year Computer Science student at Sharda University. My work sits where machine learning
+              meets quality: I have spent months writing evaluation rubrics, reviewing thousands of model responses
+              and curating training data, and I have built the pipelines that score and serve those models.
+            </p>
+            <p>
+              I like problems where the metric is the hard part. A model that scores well on a public leaderboard and
+              fails on real inputs is not finished, so I spend time on validation splits, transcript checks and
+              failure analysis before I trust a number.
+            </p>
+            <p>
+              Outside of coursework I build small products end to end, from a role based task manager to a
+              multilingual tutor, mostly to learn how the pieces fit together.
+            </p>
+          </div>
+          <div class="about-facts reveal">
+            <div class="fact">
+              <span class="fact-label">Education</span>
+              <span class="fact-value">B.Tech CSE, Sharda University, 2026</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">GPA</span>
+              <span class="fact-value">8.9 / 10</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Focus</span>
+              <span class="fact-value">Evals, data quality, applied ML</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">English, Hindi</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Publication</span>
+              <span class="fact-value">Attention U-Net on BraTS 2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">02 / Projects</p>
+          <h2>Selected work</h2>
+          <p class="section-sub">Six projects, each built end to end, with the code on GitHub.</p>
+        </div>
+
+        <div class="projects">
+          <article class="card project featured reveal">
+            <div class="project-top">
+              <span class="tag tag-solid">Evaluation</span>
+              <span class="tag">Speech</span>
+            </div>
+            <h3>Grammar and Fluency Scoring Engine</h3>
+            <p class="project-sub">Python, Whisper ASR, wav2vec2, CatBoost</p>
+            <p>
+              A scoring pipeline that turns spoken English responses into a 0 to 5 grammar score, built for the SHL
+              hiring assessment. Whisper transcripts are QA'd by hand, then combined with acoustic and linguistic
+              features.
+            </p>
+            <ul class="project-points">
+              <li>Stratified 5-fold cross validation with a 0.87 Pearson correlation against human scores.</li>
+              <li>Caught a duration shift between train and test, and dropped models that only helped the public leaderboard.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Nistha-Diwedi/shl-grammar-scoring" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="tag tag-solid">Product</span>
+              <span class="tag">Full stack</span>
+            </div>
+            <h3>Team Task Manager</h3>
+            <p class="project-sub">Next.js 15, TypeScript, Supabase</p>
+            <p>
+              A workflow tool for teams with projects, tasks and clear ownership. Role based access separates admin
+              and member permissions, and tasks can be assigned to several people at once.
+            </p>
+            <ul class="project-points">
+              <li>JWT authentication with bcrypt hashing and a junction table for multi-user assignment.</li>
+              <li>Dashboards for task totals, status and per project filtering.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Nistha-Diwedi/team-task-manager" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="tag tag-solid">Research</span>
+              <span class="tag">Computer vision</span>
+            </div>
+            <h3>Brain Tumor Segmentation Platform</h3>
+            <p class="project-sub">PyTorch, Attention U-Net, Docker</p>
+            <p>
+              A segmentation and reporting platform for MRI scans, published as research on the BraTS 2020 dataset.
+              Inference runs as a containerized service so the model can be served rather than run from a notebook.
+            </p>
+            <ul class="project-points">
+              <li>Dice score above 0.90 across 150 scans, at roughly 5 seconds per scan.</li>
+              <li>Documented preprocessing, training and evaluation steps for reproducibility.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Nistha-Diwedi/Brain-tumor-segmentation" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="tag">Backend</span>
+              <span class="tag">REST</span>
+            </div>
+            <h3>HRMS Lite</h3>
+            <p class="project-sub">React, FastAPI, SQLite</p>
+            <p>
+              A lightweight HR system for employee records and daily attendance, with admin controls and validation
+              on every write. Deployed with the frontend on Vercel and the API on Render.
+            </p>
+            <ul class="project-points">
+              <li>Normalized schema for employees and attendance, exposed through REST endpoints.</li>
+              <li>Clear validation messages and documented setup steps.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Nistha-Diwedi/hrms-lite" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="tag">Gen AI</span>
+              <span class="tag">RAG</span>
+            </div>
+            <h3>LanguageLearn.AI</h3>
+            <p class="project-sub">Llama 3.1, RAG, vector retrieval</p>
+            <p>
+              A multilingual tutor for voice and text practice in more than five languages, including English and
+              Hindi. Retrieval and prompt design keep replies grounded and in the learner's language.
+            </p>
+            <ul class="project-points">
+              <li>Prompts tuned from session analytics, lifting engagement by 35%.</li>
+              <li>API keys kept behind a server side proxy instead of the browser.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Nistha-Diwedi/LanguageLearn.AI" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="tag">Analytics</span>
+              <span class="tag">Python</span>
+            </div>
+            <h3>Uber Trip Data Analysis</h3>
+            <p class="project-sub">Python, Pandas, Matplotlib</p>
+            <p>
+              An analysis of trip records covering demand, peak hours and trip patterns, with cleaned data and
+              clear charts instead of a wall of numbers.
+            </p>
+            <ul class="project-points">
+              <li>Cleaning and aggregation scripts that replaced manual spreadsheet checks.</li>
+              <li>Findings written up so a non technical reader can act on them.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Nistha-Diwedi/Uber-Data-Analysis" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">03 / Experience</p>
+          <h2>Where I have worked</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p class="timeline-date">Feb 2026 to Jul 2026</p>
+              <p class="timeline-place">Gurugram, India</p>
+            </div>
+            <div class="timeline-body">
+              <h3>LLM Post-Training Intern</h3>
+              <p class="timeline-org">Ethara AI</p>
+              <ul class="list">
+                <li>Applied evaluation rubrics to 5,000+ model response pairs, scoring factual accuracy, reasoning, helpfulness and tone.</li>
+                <li>Curated 3,500+ multi-turn records for SFT and RLHF, with schema checks, de-duplication and format validation.</li>
+                <li>Built failure taxonomies from recurring defects and turned them into prompt suites that caught regressions before release.</li>
+                <li>Calibrated reviewers on shared guidelines and documented decisions, reducing disagreement and repeat review effort.</li>
+                <li>Held a 98% quality audit score while peer reviewing annotations.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="publication reveal">
+          <p class="section-label">Publication</p>
+          <p class="publication-title">Attention U-Net segmentation on the BraTS 2020 brain MRI dataset</p>
+          <p class="publication-meta">Published research, with preprocessing and evaluation documented for reproduction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">04 / Skills</p>
+          <h2>What I work with</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Evaluation and data</h3>
+            <ul class="chips">
+              <li>Rubric design</li>
+              <li>Pairwise scoring</li>
+              <li>Failure analysis</li>
+              <li>SFT and RLHF data</li>
+              <li>Annotation QA</li>
+              <li>De-duplication</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>ML and Python</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>scikit-learn</li>
+              <li>Hugging Face</li>
+              <li>Whisper</li>
+              <li>RAG</li>
+              <li>FAISS</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Engineering</h3>
+            <ul class="chips">
+              <li>FastAPI</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>REST APIs</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Analysis</h3>
+            <ul class="chips">
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>SQL</li>
+              <li>Matplotlib</li>
+              <li>Cross validation</li>
+              <li>Experiment tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="education reveal">
+          <div>
+            <p class="section-label">Education</p>
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <p class="muted">Sharda University, 2022 to 2026, GPA 8.9 / 10</p>
+            <p class="muted">Coursework: machine learning, NLP, DBMS, operating systems, data structures, software engineering.</p>
+          </div>
+          <div>
+            <p class="section-label">Certifications</p>
+            <ul class="list compact">
+              <li>Google Cloud: Introduction to Generative AI, Agent Fundamentals, Gemini Enterprise App.</li>
+              <li>Oracle: AI with Machine Learning, Java, Database Foundations, PL/SQL.</li>
+              <li>NPTEL: Project Management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner reveal">
+        <p class="section-label">05 / Contact</p>
+        <h2>Let us talk about evaluation, data or a role.</h2>
+        <p class="lead">I am open to full time roles in applied machine learning, evaluation and data quality, in Bengaluru or remote.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:nisthadiwedi07@gmail.com">nisthadiwedi07@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/nistha-diwedi-3351ab263/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Nistha-Diwedi" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Nistha Diwedi</p>
+      <p>Hand written HTML and CSS. No page builder.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
